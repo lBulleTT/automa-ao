@@ -23,8 +23,8 @@ from selenium.webdriver.support import expected_conditions as EC
 # CONFIGURAÇÕES 
 PORTA_DEBUG = 9222
 BAT_CAMINHO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "abrir_uniplus.bat")
-SENHA = "07051995"
-LOGIN = "47"
+SENHA = ""
+LOGIN = ""
 EMPRESA = "UNIAO DA CAIRO COMERCIO DE CEREAIS E TEMPEROS LTDA"
 TEMPO_ESPERA = 10
 INTERVALO_MINUTOS = 1
@@ -34,7 +34,7 @@ INTERVALO_MINUTOS = 1
 executando = False
 thread_execucao = None
 
-# INTERFACE COM TKINTER 
+# INTERFACE 
 def escrever_log(mensagem):
     terminal.configure(state='normal')
     terminal.insert(tk.END, mensagem + '\n')
